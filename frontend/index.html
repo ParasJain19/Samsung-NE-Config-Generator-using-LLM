@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samsung RAG Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chatbot-wrapper">
+    <header class="chatbot-header">
+      <h1>Samsung RAG</h1>
+    </header>
+
+    <div class="chatbot-body">
+      <label for="query">Ask Your Question:</label>
+      <input type="text" id="query" placeholder="e.g. What is the configuration for NE-4191 in 2023?">
+      <button onclick="sendQuery()">Submit</button>
+
+      <div id="response-container">
+        <div id="response"></div>
+      </div>
+
+      <button id="csvBtn" style="display: none;">Download CSV</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
