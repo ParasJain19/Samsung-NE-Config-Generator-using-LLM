@@ -53,7 +53,7 @@ def build_pipeline(prompt_mode="factual"):
     hybrid = EnsembleRetriever(retrievers=[bm25, vect_retr], weights=[0.5, 0.5])
 
     # LLM (Gemini)
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key="AIzaSyAgY1ZlO8egLL69-_o3gKk0IS2XV6Ti64w")
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key="API_KEy")
 
     # Select prompt
     selected_prompt = prompt_templates.get(prompt_mode, prompt_templates["factual"])
