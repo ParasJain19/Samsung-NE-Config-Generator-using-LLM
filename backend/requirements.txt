@@ -5,3 +5,5 @@ chromadb
 sentence-transformers
 flask
 python-dotenv
+# do this also
+# pip install -U langchain langchain-community langchain-huggingface langchain-google-genai
